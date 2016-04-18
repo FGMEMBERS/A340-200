@@ -141,9 +141,9 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             tsfc="0.33"
             epr="32.8"
             exhaust-speed="1300.0"
-            n1-idle="45"
+            n1-idle="20"
             n1-max="105"
-            n2-idle="70"
+            n2-idle="60"
             n2-max="108">
   <control-input axis="/controls/engines/engine[0]/throttle-lever" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
@@ -162,9 +162,9 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             tsfc="0.33"
             epr="32.8"
             exhaust-speed="1300.0"
-            n1-idle="45"
+            n1-idle="20"
             n1-max="105"
-            n2-idle="70"
+            n2-idle="60"
             n2-max="108">
   <control-input axis="/controls/engines/engine[1]/throttle-lever" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
