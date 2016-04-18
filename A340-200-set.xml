@@ -7,7 +7,8 @@
         <startup>
             <splash-texture>Aircraft/A340-200/Splash/splash.png</splash-texture>
 			<splash-texture>Aircraft/A340-200/Splash/splash1.png</splash-texture>
-			<splash-texture>Aircraft/A340-200/Splash/splash1.png</splash-texture>
+			<splash-texture>Aircraft/A340-200/Splash/splash2.png</splash-texture>
+			<splash-texture>Aircraft/A340-200/Splash/splash3.png</splash-texture>
         </startup>
 
      <model n="0">
