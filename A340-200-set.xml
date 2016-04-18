@@ -168,7 +168,7 @@
 	    <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
 		        <x-offset-m type="double">-0.09</x-offset-m>
 		        <y-offset-m type="double">0.48</y-offset-m>
-		        <z-offset-m type="double">-28.69</z-offset-m>
+		        <z-offset-m type="double">-27.44</z-offset-m>
 	    <pitch-offset-deg>-10</pitch-offset-deg>
 	    <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
 	   </config>
@@ -203,8 +203,8 @@
         <config>
             <from-model type="bool">true</from-model>
             <x-offset-m archive="y">-1.0</x-offset-m>
-            <y-offset-m archive="y">0.70</y-offset-m>
-            <z-offset-m archive="y">-10.66</z-offset-m>
+            <y-offset-m archive="y">0.27</y-offset-m>
+            <z-offset-m archive="y">-3.52</z-offset-m>
         </config>
 	  </view>
 
