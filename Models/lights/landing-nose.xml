@@ -71,7 +71,7 @@
 
 
 	<!-- Nose gear steering -->
-	<animation>
+	<!--animation>
 		<name>Landing light steer</name>
 		<type>rotate</type>
 		<object-name>Light</object-name>
@@ -88,6 +88,6 @@
 			<y-m>0</y-m>
 			<z-m>0</z-m>
 		</center>
-	</animation>
+	</animation-->
 
 </PropertyList>
