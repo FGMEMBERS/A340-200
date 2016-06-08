@@ -1354,6 +1354,10 @@
 				<property>instrumentation/afds/inputs/at-armed[3]</property>
 				<value>1</value>
 			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/it2/at_mastersw</property>
+			</binding>
 		</action>
 	</animation>
 	<animation>
