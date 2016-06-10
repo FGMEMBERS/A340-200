@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- IT-AUTOFLIGHT Configuration Dialog -->
+<!-- A340 Autopilot Configuration Dialog -->
 
 
 <PropertyList>
@@ -32,48 +32,66 @@
 		<layout>hbox</layout>
 
 		<button>
-			<legend>A/T off</legend>
+			<legend>A/T Toggle</legend>
 			<live type="bool">true</live>
 			<binding>
-			<command>property-assign</command>
-			<property>/controls/it2/at_mastersw</property>
-			<value>0</value>
+				<command>nasal</command>
+				<script>controls.click(3);a340.afds.input(2,5);</script>
 			</binding>
-		</button>
-		<button>
-			<legend>A/T on</legend>
-			<property>/controls/it2/at_master</property>
-			<live type="bool">true</live>
+				<binding>
+				<command>property-assign</command>
+				<property>instrumentation/afds/inputs/at-armed</property>
+				<value>1</value>
+			</binding>
 			<binding>
-			<command>property-assign</command>
-			<property>/controls/it2/at_mastersw</property>
-			<value>1</value>
+				<command>property-assign</command>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>instrumentation/afds/inputs/at-armed[2]</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>instrumentation/afds/inputs/at-armed[3]</property>
+				<value>1</value>
 			</binding>
 		</button>
+		<text>
+				<label>[A/T]</label>
+				<visible>
+					<equals>
+						<property>instrumentation/afds/ap-modes/speed-mode</property>
+						<value>SPD</value>
+					</equals>
+				</visible>
+		</text>
 	</group>
 		
 	<group>
 		<layout>hbox</layout>
 		
 		<button>
-			<legend>AP off</legend>
+			<legend>AP Toggle</legend>
 			<live type="bool">true</live>
 			<binding>
-			<command>property-assign</command>
+			<command>property-toggle</command>
 			<property>/controls/it2/ap_mastersw</property>
 			<value>0</value>
-			</binding>
-		</button>
-		<button>
-			<legend>AP on</legend>
-			<property>/controls/it2/ap_mastersw</property>
-			<live type="bool">true</live>
-			<binding>
-			<command>property-assign</command>
-			<property>/controls/it2/ap_mastersw</property>
 			<value>1</value>
 			</binding>
 		</button>
+		<text>
+				<label>[AP]</label>
+				<visible>
+					<equals>
+						<property>/controls/it2/ap_mastersw</property>
+						<value>1</value>
+					</equals>
+				</visible>
+		</text>
 	</group>
 
 	<group>
@@ -100,7 +118,7 @@
 				<label>[SPD]</label>
 				<visible>
 					<equals>
-						<property>/controls/it2/apthrmode</property>
+						<property>instrumentation/afds/inputs/ias-mach-selected</property>
 						<value>0</value>
 					</equals>
 				</visible>
@@ -118,7 +136,7 @@
 				<label>[Mach]</label>
 				<visible>
 					<equals>
-						<property>/controls/it2/apthrmode</property>
+						<property>instrumentation/afds/inputs/ias-mach-selected</property>
 						<value>1</value>
 					</equals>
 				</visible>
@@ -234,7 +252,7 @@
 				<legend>SPD</legend>
 				<binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apthrset</property>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
 				<value>0</value>
 				</binding>
 			</button>
@@ -261,7 +279,7 @@
 				<legend>Mach</legend>
 				<binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apthrset</property>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
 				<value>1</value>
 				</binding>
 			</button>
@@ -269,7 +287,7 @@
 			<input>
 				<row>1</row>
 				<col>2</col>
-				<property>autopilot/settings/target-mach</property>
+				<property>autopilot/settings/target-speed-mach</property>
 				<live type="bool">true</live>
 				<binding>
 					<command>dialog-apply</command>
@@ -416,7 +434,7 @@
 			<layout>hbox</layout>
 			
 			<button>
-				<legend>NAV</legend>
+				<legend>LNAV</legend>
 				<binding>
 				<command>property-assign</command>
 				<property>/controls/it2/aplatset</property>
@@ -434,7 +452,7 @@
 			</button>
 			
 			<button>
-				<legend>ILS</legend>
+				<legend>APPR</legend>
 				<binding>
 				<command>property-assign</command>
 				<property>/controls/it2/apvertset</property>
@@ -443,7 +461,7 @@
 			</button>
 			
 		</group>
-		
+
 	</group>
 
 </PropertyList>
