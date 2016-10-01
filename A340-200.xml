@@ -23,10 +23,10 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
 
 
 <approach speed="134" alt="0.0" aoa="5.0" fuel="0.2" glide-angle="0.0">
-      <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.25"/>
-      <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.25"/>
-     <control-setting axis="/controls/engines/engine[2]/throttle-act" value="0.25"/>
-      <control-setting axis="/controls/engines/engine[3]/throttle-act" value="0.25"/>
+      <control-setting axis="/controls/engines/engine[0]/throttle-fdm" value="0.25"/>
+      <control-setting axis="/controls/engines/engine[1]/throttle-fdm" value="0.25"/>
+     <control-setting axis="/controls/engines/engine[2]/throttle-fdm" value="0.25"/>
+      <control-setting axis="/controls/engines/engine[3]/throttle-fdm" value="0.25"/>
       <control-setting axis="/controls/flight/flaps" value="1"/>
       <control-setting axis="/surface-positions/slats" value="1"/>
       <control-setting axis="/controls/gear/gear-down" value="1"/>
@@ -37,10 +37,10 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
 
 <!-- Cruise configuration -->
 <cruise speed="471" alt="36000" fuel="0.7">
-  <control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.75"/>
-  <control-setting axis="/controls/engines/engine[1]/throttle-lever" value="0.75"/>
-<control-setting axis="/controls/engines/engine[2]/throttle-lever" value="0.75"/>
-<control-setting axis="/controls/engines/engine[3]/throttle-lever" value="0.75"/>
+  <control-setting axis="/controls/engines/engine[0]/throttle-fdm" value="0.75"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle-fdm" value="0.75"/>
+<control-setting axis="/controls/engines/engine[2]/throttle-fdm" value="0.75"/>
+<control-setting axis="/controls/engines/engine[3]/throttle-fdm" value="0.75"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
   <control-setting axis="/controls/gear/gear-down" value="0"/>
 <solve-weight idx="0" weight="350"/>
@@ -145,7 +145,7 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             n1-max="105"
             n2-idle="60"
             n2-max="108">
-  <control-input axis="/controls/engines/engine[0]/throttle-lever" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[0]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
@@ -166,7 +166,7 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             n1-max="105"
             n2-idle="60"
             n2-max="108">
-  <control-input axis="/controls/engines/engine[1]/throttle-lever" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[1]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
@@ -186,7 +186,7 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             n1-max="105"
             n2-idle="60"
             n2-max="108">
-  <control-input axis="/controls/engines/engine[2]/throttle-lever" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[2]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[2]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[2]"/>
@@ -207,7 +207,7 @@ http://www.airliners.net/aviation-forums/tech_ops/read.main/188746/
             n1-max="105"
             n2-idle="60"
             n2-max="108">
-  <control-input axis="/controls/engines/engine[3]/throttle-lever" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[3]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[3]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[3]"/>
