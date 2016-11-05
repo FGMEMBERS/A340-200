@@ -146,7 +146,7 @@
 		
             <config>
                 <x-offset-m type="double">-0.50</x-offset-m>
-                <y-offset-m type="double">0.14</y-offset-m>
+                <y-offset-m type="double">0.16</y-offset-m>
                 <z-offset-m type="double">-27.98</z-offset-m>
                 <pitch-offset-deg>-8</pitch-offset-deg>
                 <limits>
@@ -251,7 +251,7 @@
 	    <from-model-idx type="int">0</from-model-idx>
 	    <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
 		        <x-offset-m type="double">0.45</x-offset-m>
-		        <y-offset-m type="double">0.14</y-offset-m>
+		        <y-offset-m type="double">0.16</y-offset-m>
 		        <z-offset-m type="double">-27.98</z-offset-m>
 	    <pitch-offset-deg>-8</pitch-offset-deg>
 	    <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
